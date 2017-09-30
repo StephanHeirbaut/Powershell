@@ -1,5 +1,7 @@
 # Veel gebruikte Commando’s
+
 |Commando|Option|Description|
+|--------|------|-----------|
 |Get-Verb | |om alle mogelijke werkwoorden te zien|
 |Get-Alias || geeft een overzicht van alle aliassen die je kan gebruiken|
 |Show-Command Get-ChildItem ||hiermee krijg je een venster waarin je de parameters en hun waarden kunt invullen|
