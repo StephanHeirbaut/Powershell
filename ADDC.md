@@ -1,5 +1,7 @@
 # Active Directory
 
+## Prerequisites
+
 You can import and display the cmdlets by running the following commands from Windows PowerShell. You need only run the Add-WindowsFeature for the specific server role that you would like to add.
 
 |Commando|Options  |Parameters  |Description |
@@ -12,7 +14,8 @@ You can import and display the cmdlets by running the following commands from Wi
 |Import-Module|/|ADDSDeployment|Imports the AD DS Deployment module that provides the above cmdlets.|
 |Get-Command|-Module|ADDSDeployment|Displays all the above cmdlets that are associated with AD DS Deployment.|
 
-AD DS Deployment Cmdlets
+## AD DS Deployment Cmdlets
+
 |Commando|Options  |Parameters  |Description |
 |--------|---------|------------|------------|
 |Install-ADDSDomainController|/|/|Installs a domain controller in Active Directory.|
