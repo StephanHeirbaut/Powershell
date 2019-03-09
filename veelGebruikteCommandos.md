@@ -46,10 +46,10 @@
 |Set-ADUser || hiermee kan je AD-users aanpassen of toevoegen|
 
 To do:
-    * Network info
-    * Registry
-    * Files & printers
-    * AD & user rights
+* Network info
+* Registry
+* Files & printers
+* AD & user rights
 
 ## Advanced commandos
 |Commando|Option|Description|
