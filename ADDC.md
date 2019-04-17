@@ -4,7 +4,7 @@
 
 You can import and display the cmdlets by running the following commands from Windows PowerShell. You need only run the Add-WindowsFeature for the specific server role that you would like to add.
 
-|Commando|Options  |Parameters  |Description |
+|Command|Options  |Parameters  |Description |
 |--------|---------|------------|------------|
 |install-windowsfeature |/|-name AD-Domain-Services –IncludeManagementTools|This command will extract all required binary files and start the installation procedure|
 |Add-ADDSReadOnlyDomainControllerAccount|/|/|Creates a read-only domain controller (RODC) account that can be used to install an RODC in Active Directory.|
@@ -16,7 +16,7 @@ You can import and display the cmdlets by running the following commands from Wi
 
 ## AD DS Deployment Cmdlets
 
-|Commando|Options  |Parameters  |Description |
+|Command|Options  |Parameters  |Description |
 |--------|---------|------------|------------|
 |Install-ADDSDomainController|/|/|Installs a domain controller in Active Directory.|
 |Install-ADDSDomain|/|/|Installs a new Active Directory domain configuration.|

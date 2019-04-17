@@ -1,58 +1,6 @@
-# Veel gebruikte Commando’s
+# Advanced commandos
 
-## Basic commandos
-|Commando|Option|Description|
-|--------|------|-----------|
-|Get-ChildItem || hiermee worden items opgehaald vanuit de huidige/aangeduide locatie|
-|Set-Location||hiermee kan je veranderen van locatie|
-|Get-Item || hiermee kunnen bestanden en mappen op de logische schijven worden opgehaald|
-|update-help |–Full krijg je veel meer info, waaronder ook voorbeelden <br>–ShowWindows wordt de help in een apart venster getoond| hiermee wordt de laatste content van het internet gehaald|
-|Get-Content || hiermee lees je de inhoud van bestanden|
-|clear-host || hiermee maak je je scherm leeg|
-|New-Item || hiermee kun je een nieuwe file aanmaken|
-|Remove-Item || hiermee kan je een bestand of een map weghalen|
-|WhatIf ||kan je gebruiken om vooraf te bepalen wat er zou gebeuren indien je dit commando uitvoert, je kan hiervoor ook –Confirm gebruiken|
-
-## Get-help
-
-|Commando|Option|Description|
-|--------|------|-----------|
-|Get-Verb | -verb s* |om alle mogelijke werkwoorden die beginnen met 's' te zien|
-|Get-Alias || geeft een overzicht van alle aliassen die je kan gebruiken|
-|Get-Help| -full -example | hiermee krijg je meer info over het commando|
-|Get-commando |-type -name| hiermee krijg je een lijst van alle beschikbare Cmdlets en functies van alle geladen modules|
-|Show-Command naam_commando ||hiermee krijg je een venster waarin je de parameters en hun waarden kunt invullen|
-|Get-History || hiermee kan je kijken welke commando’s je in de huidig sessie hebt gebruikt|
-|Invoke-History || hiermee kun je het commando uit je geschiedenis herhalen (pijltje omhoog werkt ook)|
-|Get-PSProvider || geef je een lijst van alle providers|
-|Get-Service naam_service |–Name| een service te selecteren, zonder de optie –Name of –Value wordt er poging gedaan om alle services te selecteren|
-
-## Troubleshooting
-|Commando|Option|Description|
-|--------|------|-----------|
-|Get-Counter||Haalt real-time performance info op|
-|Get-Counter|"\memory\% commited bytes in use"|Specifiek ophalen RAM gebruik|
-|Get-WMIObject –class Win32_class || hiermee kan je WMI(Windows Management Instrumentation)-objecten gebruikten|
-|Get-WMIObject –List –Namespace root\wmi || hiermee worden alle WMI-objecten weergegeven|
-|Get-WMIObject –List 'pipe' Where-object {$_.name –match ‘Win32’} || hiermee worden alle win32 Cmdlets weergegeven|
-|Get-CIMClass||Ophalen alle beschikbare CIM Classes, deze kunnen gevoed worden aan Get-CIMInstance|
-|Get-CIMInstance  || Ophalen RAM gebruik|
-|Get-CIMInstance  |WIN32_PhysicalMemory| Ophalen RAM gebruik|
-|Get-Eventlog||Ophalen logs over bepaald eventid|
-|Start-Service || om een service te starten|
-|Stop-Service || om een service te stoppen|
-|Set-ACL || hiermee kunnen rechten op files en shares aangepast worden|
-|Set-ADGroup || hiermee pas je AD-groepen aan of voeg je deze toe aan AD|
-|Set-ADUser || hiermee kan je AD-users aanpassen of toevoegen|
-
-To do:
-* Network info
-* Registry
-* Files & printers
-* AD & user rights
-
-## Advanced commandos
-|Commando|Option|Description|
+|Command|Option|Description|
 |--------|------|-----------|
 |Set-Alias || hiermee kan je aliassen aanmaken of wijzigen|
 |Export-Csv || hiermee stuur je iets door naar een csv (comma-seperated value)- bestand|
@@ -89,11 +37,3 @@ To do:
 |$variabele = New-Object –comobject Comapp.application || hiermee definiëren we een COM-object|
 |New-Object || hiermee creeër je nieuwe objecten|
 |-comobject || duid aan dat het om een COM(Component Object Model)-object gaat|
-
-## Setup Remote Session
-
-*TO DO*
-
-## Get info on remote system
-
-*TO DO*

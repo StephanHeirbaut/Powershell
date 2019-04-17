@@ -12,3 +12,6 @@ https://blogs.technet.microsoft.com/heyscriptingguy/
 
 Website van Guy Thomas
 http://www.computerperformance.co.uk/powershell/index.htm
+
+Pluralsight - Powershell: Getting Started
+https://app.pluralsight.com/library/courses/powershell-getting-started/table-of-contents
