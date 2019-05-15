@@ -1,4 +1,3 @@
-﻿# Source: https://blog.kloud.com.au/2016/04/21/using-saved-credentials-securely-in-powershell-scripts/
 # Unsecure credential creation
 $username = "bad.admin@acme.com.au"
 $password = "Password123!@#"
