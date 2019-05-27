@@ -1,6 +1,5 @@
-﻿# Source: https://blog.kloud.com.au/2016/04/21/using-saved-credentials-securely-in-powershell-scripts/
 # Unsecure credential creation
-$username = "bad.admin@acme.com.au"
+$username = "bad.admin@acme.com"
 $password = "Password123!@#"
 $secureStringPwd = $password | ConvertTo-SecureString -AsPlainText -Force 
 $creds = New-Object System.Management.Automation.PSCredential -ArgumentList $user, $secureStringPwd
@@ -8,7 +7,7 @@ $creds = New-Object System.Management.Automation.PSCredential -ArgumentList $use
 
 
 # secure credential creation
-$username = "better.admin@acme.com.au"
+$username = "better.admin@acme.com"
 $pwdTxt = Get-Content "C:\temp\ExportedPassword.txt"
 $securePwd = $pwdTxt | ConvertTo-SecureString 
 $credObject = New-Object System.Management.Automation.PSCredential -ArgumentList $username, $securePwd
@@ -26,7 +25,7 @@ Set-Content $AESKeyFilePath $AESKey   # Any existing AES Key file will be overwr
 $password = $passwordSecureString | ConvertFrom-SecureString -Key $AESKey
 Add-Content $credentialFilePath $password
 
-$username = "reasonable.admin@acme.com.au"
+$username = "reasonable.admin@acme.com"
 $AESKey = Get-Content $AESKeyFilePath
 $pwdTxt = Get-Content $SecurePwdFilePath
 $securePwd = $pwdTxt | ConvertTo-SecureString -Key $AESKey
